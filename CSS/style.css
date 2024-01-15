@@ -1,0 +1,33 @@
+#button{
+    padding: 10px;
+    color: white;
+    background-color: darkmagenta;
+    border-radius: 15px;
+}
+ #button1{
+    font-size: 20px;
+    padding: 20px;
+    color:  black;
+    background-color: darkmagenta;
+    border-radius: 20px;
+    margin-left: 90vh;
+}
+h1{
+    color: darkmagenta;
+    text-decoration-line: underline;
+    text-align: center;
+}
+.name{
+   margin-left: 70vh;
+
+
+}
+.centre{
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+.input_div{
+    background-color: chartreuse;
+    padding: 5px;
+}
