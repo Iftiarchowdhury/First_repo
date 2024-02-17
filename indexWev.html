@@ -12,13 +12,15 @@
             box-sizing: border-box;
         }
 
+        /* Navbar style start  */
+
         header {
             background-color: rgba(65, 115, 147, 0.861);
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 50px;
-            
+            padding: 30px 50px;
+
         }
 
         .container {
@@ -29,27 +31,17 @@
 
         .main {
             color: white;
-            
-            
-            
-            
-          
-
         }
+
         .menu ul {
-            
+
             display: flex;
-            
-
         }
-
-
-        
 
         ul li {
             list-style: none;
             padding: 20px;
-         /*font-size: 20px;*/
+            /*font-size: 20px;*/
         }
 
         ul li a {
@@ -59,20 +51,52 @@
             font-weight: bold;
             transition: 0.4s ease-in-out;
         }
-        
+
 
         ul li a:hover {
             color: #1c2e3e;
         }
 
-
-
         .navbar li {
             list-style-type: none;
-            
+
             color: white;
             text-decoration: none;
             color: white;
+        }
+
+        .btn {
+            background-color: #152b3a;
+            color: white;
+
+            text-align: center;
+            border: solid #152b3a;
+
+            padding: 3px 5px;
+            border-radius: 8px;
+        }
+
+        .btn:hover {
+            color: chartreuse;
+        }
+
+        /* navbar style end  */
+
+        /* banner style strat */
+        .main_content {
+            padding: 20px;
+        }
+
+        .main_body {
+            width: 100%;
+            height: 100vh;
+            background: url(./html/assets/main_bg.jpg);
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            
+
         }
 
         .join {
@@ -85,29 +109,15 @@
             transition: color 0.3s ease;
         }
 
-        .main_body {
-            width: 100%;
-            height: 100vh;
-            background: url(./html/assets/main_bg.jpg);
-            background-size: cover;
-
-        }
-
-        .main_content {
-            padding: 20px;
-        }
-
-        .btn {
-            background-color: #152b3a;
+        .loginform{ 
+            background: none;
+            padding: 10px;
+            height: 370px;
             color: white;
-
-            text-align: center;
-            border: solid #152b3a;
-           
-            padding: 3px 5px;
-            border-radius: 8px;
-            }
-            .btn:hover{ color: chartreuse;}
+            width: 250px;
+            border-radius: 10px;
+            border: #3a2015;
+        }
 
         .footer_menu {
             width: 100%;
@@ -118,39 +128,33 @@
             padding-left: 50px;
             padding-top: 50px;
         }
-
-        .video {
-            padding-left: 65%;
-            padding-top: 0.5%;
-
-        }
     </style>
 </head>
 
 <body>
     <header>
-        
-            <div class="main">
-                
-                    <h1>
-                         Gopro 
-                    </h1>
-                </div>
-                <div class="menu">
-                    <ul>
-                        <li> <a href=# > Home </a></li>
-                        <li> <a href=# > Service </a></li>
-                        <li> <a href=#> Contact</a></li>
-                        <li> <a href=# > About </a></li>
-                        <li > <a href="#" class="btn">Sign up</a></li>
-                        <li > <a href="#" class="btn" >Login</a></li>
-                    </ul>
-                </div>
-            
-        
+
+        <div class="main">
+
+            <h1>
+                Gopro
+            </h1>
+        </div>
+        <div class="menu">
+            <ul>
+                <li> <a href=#> Home </a></li>
+                <li> <a href=#> Service </a></li>
+                <li> <a href=#> Contact</a></li>
+                <li> <a href=#> About </a></li>
+                <li> <a href="#" class="btn">Sign up</a></li>
+                <li> <a href="#" class="btn">Login</a></li>
+            </ul>
+        </div>
+
+
     </header>
-     <!-- Write your comments here 
-    
+
+
     <main>
         <div class="main_body">
             <div class="main_content">
@@ -160,21 +164,25 @@
                 <p style="color: aliceblue;"> Welcome to our online platform, where creativity meets expertise! Dive
                     into the world of cinematic videography</p>
                 <button class="join">Join us</button>
-                <div class="video">
-                    <video width="360" height="260" controls>
-                        <source src="./html/assets/production_id_3971351 (2160p).mp4" type="video/mp4">
+            </div>
+            <div class="loginform"> 
+                
+                <input type="text" placeholder=" User ID">
+                <br> <br>
+                <input type="password" placeholder="Enter password here">
+                <br> <br>
+                <input type="submit" value="Login">
+                <p> Dont have account ?</p>
+                <p> <a href="">sign up </a> here </p>
 
-
-                    </video>
-
-                </div>
             </div>
 
+        </div>
 
-        </div>
-        </div>
+
+
     </main>
-  
+
     <footer>
         <div class="footer_menu">
             <footer>
@@ -200,7 +208,7 @@
 
         </div>
     </footer>
-     -->
+
 </body>
 
 </html>
